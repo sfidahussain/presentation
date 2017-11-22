@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Highline Capsule 1</title>
+	<link class="a" rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link class="a" rel="stylesheet" href="assets/css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300|Permanent+Marker" rel="stylesheet">
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script class="a" src="assets/js/data.js"></script>
+  <script src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
+<link href="http://kenwheeler.github.io/slick/slick/slick.css" rel="stylesheet"/>
+<link href="http://kenwheeler.github.io/slick/slick/slick-theme.css" rel="stylesheet"/>
+</head>
+<body>
+
+<header class="header">
+        <img class="img-fluid center" src="assets/VI/Highline.png" alt="Highline">
+    <h2>Turnaround</h2>
+  <button id="forward" onclick="forward()" type="button" class="pull-right">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
+  </button>
+  <button id="resume" onclick="resume()" type="button" class="pull-right">
+    <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+    </button>
+  <button id="back" onclick="back()" type="button" class="pull-right">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  </button>
+</header>
+
+<div class="container" id="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <img class="turntable-frame" src="" alt="">
+        </div>
+        <div class="col-lg-4">
+            <br><br>
+            <h3 id="name">PUT A SMILE ON SS Graphic Tee</h3>
+            <br><p id="description">100% COTTON<br>160 GSM<br>COMBED & COMPACTED<br>GARMENT SOFTNER WASH W/<br>WATERBASE PRINT</p>
+        </div>
+      </div>
+</div>
+
+<footer class="fixed-bottom footer">
+  <div class="multiple-items"></div>      
+</footer>
+
+</body>
+<script class="a" src="assets/js/design.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        dots: true,
+                arrows: true
+      });
+    });
+</script>
+</html>
+
